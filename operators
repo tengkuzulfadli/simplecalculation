@@ -1,0 +1,65 @@
+using System;
+
+namespace LabFiveTwo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            int x, y, gt;
+            int ch;
+
+            Console.WriteLine("Please select 1 for addition: ");
+            Console.WriteLine("Please select 2 for minus: ");
+            Console.WriteLine("Please select 2 for multiply: ");
+            Console.WriteLine("Please select 4 for division: ");
+            ch = Convert.ToInt32(Console.ReadLine());
+
+            switch (ch)
+            {
+                case 1:
+                    {
+                        Console.WriteLine("Please enter two numbers: ");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        y = Convert.ToInt32(Console.ReadLine());
+                        gt = x + y;
+                        Console.WriteLine("The result is : " + gt);
+                        break;
+                    }
+                case 2:
+                    {
+                        Console.WriteLine("Please enter two numbers: ");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        y = Convert.ToInt32(Console.ReadLine());
+                        gt = x - y;
+                        Console.WriteLine("The result is : " + gt);
+                        break;
+                    }
+                case 3:
+                    {
+                        Console.WriteLine("Please enter two numbers: ");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        y = Convert.ToInt32(Console.ReadLine());
+                        gt = x * y;
+                        Console.WriteLine("The result is : " + gt);
+                        break;
+                    }
+                case 4:
+                    {
+                        Console.WriteLine("Please enter two numbers: ");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        y = Convert.ToInt32(Console.ReadLine());
+                        gt = x / y;
+                        Console.WriteLine("The result is : " + gt);
+                        break;
+                    }
+                default:
+                    Console.WriteLine("Choose between 1 to 4 only!");
+                    break;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
